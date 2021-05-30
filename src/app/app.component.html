@@ -6,7 +6,7 @@
     placeholder="Ex. Pizza"
   />
 </mat-form-field>
-<button mat-raised-button>Basic</button>
+<button (click)="clearValue()" mat-raised-button>Clear All</button>
 <mat-tab-group (selectedTabChange)="filteredCardByTabs($event)">
   <mat-tab label="All"></mat-tab>
   <div *ngFor="let item of tabsMenu">
